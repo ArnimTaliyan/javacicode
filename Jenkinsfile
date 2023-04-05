@@ -8,12 +8,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ArnimTaliyan/javacicode.git'
             }
         }
-    stages {
-        stage('UNIT Testing') {
+        stage('UNIT TESTING') {
             steps {
                 sh 'mvn test'
             }
         }
-    }
     }
 }
