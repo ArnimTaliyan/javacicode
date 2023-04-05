@@ -5,14 +5,7 @@ pipeline {
     stages {
         stage('GIT Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ArnimTaliyan/javacicode.git'
-            }
-        }
-    }
-    stages {
-        stage('UNIT TESTING') {
-            steps {
-                sh 'mvn test'
+                git branch: 'main', url: 'https://github.com/vishalchauhan91196/javacicode.git'
             }
         }
     }
